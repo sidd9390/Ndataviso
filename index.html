@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>NDataViso</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -21,25 +21,27 @@
                         <div class="d-flex align-items-center me-3">
                             <i style="color: #4CAF4F;" class="fa-solid fa-location-dot fs-2 me-4"></i>
                             <div>
-                                <h6 class="m-0">Contact us</h6>
-                                <p class="m-0" style="font-size: 12px;">Plot No.2, Road No 2, Maruthi Enclave,Near Vasavi Shiva Nagar,<br>
-                                  Kushaiguda, ECIL Post,Hyderabad 500062 Telangana India
-                                  </p>
+                                <h6 class="m-0 fw-bold">Contact us</h6>
+                                <a href="https://maps.app.goo.gl/qHtHP9znnUaDGpHQA" style="color: black; text-decoration: none;" target="_blank">
+                                  <p class="m-0" style="font-size: 12px;">Plot No.2, Road No 2, Maruthi Enclave,Near Vasavi Shiva Nagar,<br>
+                                    Kushaiguda, ECIL Post,Hyderabad 500062 Telangana India
+                                    </p>
+                                </a>
                             </div>
                         </div>
                         <div class="d-flex align-items-center me-3">
                             <i style="color: #4CAF4F;" class="fa-solid fa-envelope fs-2 me-4"></i>
                             
                             <div>
-                                <h6 class="m-0">Email us</h6>
-                                <p class="m-0">bnrajumnc@gmail.com</p>
+                                <h6 class="m-0 fw-bold">Email us</h6>
+                                <a href="mailto:bnrajumnc@gmail.com" style="text-decoration: none; color: black;"><p class="m-0">bnrajumnc@gmail.com</p></a>
                             </div>
                         </div>
                         <div class="d-flex align-items-center me-3">
                             <i style="color: #4CAF4F;" class="fa-solid fa-phone-volume fs-2 me-4"></i>
                             <div>
-                                <h6 class="m-0">Free Call</h6>
-                                <p class="m-0">+91 9640130373</p>
+                                <h6 class="m-0 fw-bold">Free Call</h6>
+                                <a href="tel:+919640130373" style="color: black; text-decoration: none;"><p class="m-0">+91 9640130373</p></a>
                             </div>
                         </div>
                     
@@ -47,7 +49,7 @@
                 </div>
             </div>
         </div>
-        <div style="background-color: #4CAF4F;">
+        <div style="background-color: #1f57c3;">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
 
@@ -77,17 +79,26 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                      <li class="nav-item me-3">
+                      <li class="nav-item me-3" style="background-color: #4CAF4F;">
                         <a class="nav-link fw-bold fs-5" style="color: white;" aria-current="page" href="./index.html">Home</a>
                       </li>
                       <li class="nav-item me-3">
-                        <a class="nav-link fw-bold fs-5 " style="color: white;" href="./about_us.html">About</a>
+                        <a class="nav-link fw-bold fs-5 footer_hover" href="./about_us.html">About</a>
+                      </li>
+                      
+                      <li class="nav-item dropdown me-3">
+                        <a class="nav-link dropdown-toggle fw-bold fs-5 footer_hover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Services
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./services.html">Data Engineering</a></li>
+                          <li><a class="dropdown-item" href="./services.html">Data, BI and Analytics</a></li>
+                          <li><a class="dropdown-item" href="./services.html">Web App Development</a></li>
+                          <li><a class="dropdown-item" href="./services.html">Migration from Old solutions to Latest solutions</a></li>
+                        </ul>
                       </li>
                       <li class="nav-item me-3">
-                        <a class="nav-link fw-bold fs-5" style="color: white;" href="./services.html">Services</a>
-                      </li>
-                      <li class="nav-item me-3">
-                        <a class="nav-link fw-bold fs-5" style="color: white;" href="./contact_us.html">Contact</a>
+                        <a class="nav-link fw-bold fs-5 footer_hover" href="./contact_us.html">Contact</a>
                       </li>
                     </ul>
                   </div>
@@ -117,13 +128,11 @@
         <div class="container text-center">
             <h2>Our Clients</h2>
             <p>We have been working with some Fortune 20+ clients</p>
-            <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-                <img src="./assets/images/Logo_1.png" class="img-fluid p-3" width="100px" alt="">
-                <img src="./assets/images/Logo_2.png" class="img-fluid p-3" width="100px" alt="">
-                <img src="./assets/images/Logo_6.png" class="img-fluid p-3" width="100px" alt="">
-                <img src="./assets/images/Logo_4.png" class="img-fluid p-3" width="100px" alt="">
-                <img src="./assets/images/Logo_5.png" class="img-fluid p-3" width="100px" alt="">
-                <img src="./assets/images/Logo_6.png" class="img-fluid p-3" width="100px" alt="">
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <img src="./assets/images/logo.jpg" class="img-fluid p-3" width="250px" alt="">
+                <img src="./assets/images/slss_logo.png" class="img-fluid p-3" width="250px" alt="">
+                
+                
             </div>
         </div>
     </section>
@@ -135,7 +144,7 @@
                 </div>
                 <div class="col-lg-6 col-12">
                     <h1 class="fw-semibold" style="color: #4CAF4F;">About NDataViso</h1>
-                    <p>At Ndataviso, we understand that in today's data-driven world, managing and harnessing the power of information is critical for success. As a leading provider in database management solutions, we specialize in helping businesses unlock the full potential of their data assets.</p>
+                    <p class="fs-5">At Ndataviso, we understand that in today's data-driven world, managing and harnessing the power of information is critical for success. As a leading provider in database management solutions, we specialize in helping businesses unlock the full potential of their data assets.</p>
                     <div class="mt-4">
                         <a href="#" class="main_button">Know More</a>
                     </div>
@@ -157,7 +166,7 @@
                           </h2>
                           <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                              <p>Our team comprises certified professionals with extensive experience in Microsoft data platforms and business intelligence technologies.</p>
+                              <p class="fs-5">Our team comprises certified professionals with extensive experience in Microsoft data platforms and business intelligence technologies.</p>
                             </div>
                           </div>
                         </div>
@@ -169,7 +178,7 @@
                           </h2>
                           <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body" style="color: black; background: transparent;">
-                              <p>We tailor solutions to fit your unique business needs, ensuring maximum value and ROI.</p>
+                              <p class="fs-5">We tailor solutions to fit your unique business needs, ensuring maximum value and ROI.</p>
                             </div>
                           </div>
                         </div>
@@ -181,7 +190,7 @@
                           </h2>
                           <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                              <p>Our solutions are designed to scale alongside your business, accommodating growth and evolving requirements seamlessly.</p>
+                              <p class="fs-5">Our solutions are designed to scale alongside your business, accommodating growth and evolving requirements seamlessly.</p>
                             </div>
                           </div>
                         </div>
@@ -193,7 +202,7 @@
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                <p>We provide ongoing support and maintenance to keep your systems running smoothly and optimally.</p>
+                                <p class="fs-5">We provide ongoing support and maintenance to keep your systems running smoothly and optimally.</p>
                               </div>
                             </div>
                           </div>
@@ -234,10 +243,10 @@
                     <div class="row d-flex justify-content-center m-0">
                       <div class="col-lg-5 m-4 card p-0"
                         style="border-radius: 10px;">
-                        <div class="mt-3 text-center">
+                        <div class="mt-3 text-start">
                           <img src="./assets/images/Avatar.png"  class="img-fluid" style="width: 100px;" alt="">
                         </div>
-                        <div class="card-body text-center" style="height: 310px; position: relative;">
+                        <div class="card-body text-start" style="height: 310px; position: relative;">
                           <h4 class="card-title display-6 fs-4 fw-semibold" style="color: black;">Microsoft SQL Server</h4>
                           <p class="card-text">Our expertise in Microsoft SQL Server ensures robust, scalable, and
                             secure data management solutions for businesses of all sizes. Whether you require database design and
@@ -245,22 +254,22 @@
                             meet your needs.
                           </p>
                           
-                          <div class="mt-4" style="position: absolute; bottom: 20px; left: 50%; transform: translate(-50%);">
+                          <div class="mt-4" style="position: absolute; bottom: 30px; left: 16px;">
                             <a href="#" class="main_button">Know More</a>
                         </div>
                         </div>
                       </div>
                       <div class="col-lg-5 m-4 card p-0"
                         style="border-radius: 10px;">
-                        <div class="mt-3 text-center">
+                        <div class="mt-3 text-start">
                           <img src="./assets/images/Avatar.png" class="img-fluid" style="width: 100px;" alt="">
                         </div>
-                        <div class="card-body text-center p-4" style="position: relative;">
+                        <div class="card-body text-start p-4" style="position: relative;">
                           <h4 class="card-title display-6 fs-4 fw-semibold" style="color: black;">SQL Server Integration Services (SSIS)</h4>
                           <p class="card-text">With SSIS, we enable seamless data integration across diverse sources, formats, and destinations.
                             Our team designs and deploys SSIS packages to extract, transform, and load data efficiently, automating complex
                             workflows and streamlining data movement processes to enhance productivity and accuracy. </p>
-                          <div class="mt-4" style="position: absolute; bottom: 20px; left: 50%; transform: translate(-50%);">
+                          <div class="mt-4" style="position: absolute; bottom: 30px; left: 16px;">
                             <a href="#" class="main_button">Know More</a>
                         </div>
                         </div>
@@ -272,33 +281,33 @@
                     <div class="row d-flex justify-content-center m-0">
                       <div class="col-lg-5 m-4 card p-0"
                         style="border-radius: 10px;">
-                        <div class="mt-3 text-center">
+                        <div class="mt-3 text-start">
                           <img src="./assets/images/Avatar.png"  class="img-fluid" style="width: 100px;" alt="">
                         </div>
-                        <div class="card-body text-center" style="height: 310px; position: relative;">
+                        <div class="card-body text-start" style="height: 310px; position: relative;">
                           <h4 class="card-title display-6 fs-4 fw-semibold" style="color: black;">SQL Server Reporting Services (SSRS) </h4>
                           <p class="card-text">Transform raw data into actionable insights with SSRS. Our experts design and deploy
                             pixel-perfect reports, interactive dashboards, and mobile-ready solutions tailored to your business requirements.
                             From financial statements to operational metrics, we empower stakeholders at all levels to make data-driven
                             decisions with confidence.
                           </p>
-                          <div class="mt-4" style="position: absolute; bottom: 20px; left: 50%; transform: translate(-50%);">
+                          <div class="mt-4" style="position: absolute; bottom: 30px; left: 16px;">
                             <a href="#" class="main_button">Know More</a>
                         </div>
                         </div>
                       </div>
                       <div class="col-lg-5 m-4 card p-0"
                         style="border-radius: 10px;">
-                        <div class="mt-3 text-center">
+                        <div class="mt-3 text-start">
                           <img src="./assets/images/Avatar.png" class="img-fluid" style="width: 100px;" alt="">
                         </div>
-                        <div class="card-body text-center p-4" style="position: relative;">
+                        <div class="card-body text-start p-4" style="position: relative;">
                           <h4 class="card-title display-6 fs-4 fw-semibold" style="color: black;">SQL Server Analysis Services (SSAS)</h4>
                           <p class="card-text">Unlock the power of multidimensional and tabular data analysis with SSAS. Our team develops OLAP
                             cubes, data mining models, and advanced analytics solutions to uncover hidden patterns, trends, and correlations
                             within your data. Gain deeper insights into your business performance and forecast future outcomes with precision.
                           </p>
-                          <div class="mt-4" style="position: absolute; bottom: 20px; left: 50%; transform: translate(-50%);">
+                          <div class="mt-4" style="position: absolute; bottom: 30px; left: 16px;">
                             <a href="#" class="main_button">Know More</a>
                         </div>
                         </div>
@@ -310,33 +319,33 @@
                     <div class="row d-flex justify-content-center m-0">
                       <div class="col-lg-5 m-4 card p-0"
                         style="border-radius: 10px;">
-                        <div class="mt-3 text-center">
+                        <div class="mt-3 text-start">
                           <img src="./assets/images/Avatar.png"  class="img-fluid" style="width: 100px;" alt="">
                         </div>
-                        <div class="card-body text-center" style="height: 310px; position: relative;">
-                          <h4 class="card-title display-6 fs-4 fw-semibold" style="color: black;">Power BI </h4>
+                        <div class="card-body text-start" style="height: 310px; position: relative;">
+                          <h4 class="card-title display-6 fs-4 fw-semibold" style="color: black;">Microsoft Power BI </h4>
                           <p class="card-text">Experience the next generation of business intelligence with Power BI. Our specialists leverage
                             this intuitive and user-friendly platform to create immersive data visualizations, interactive reports, and
                             personalized dashboards that empower users to explore data, discover insights, and drive business outcomes in
                             real-time.
                           </p>
-                          <div class="mt-4" style="position: absolute; bottom: 20px; left: 50%; transform: translate(-50%);">
+                          <div class="mt-4" style="position: absolute; bottom: 30px; left: 16px;">
                             <a href="#" class="main_button">Know More</a>
                         </div>
                         </div>
                       </div>
                       <div class="col-lg-5 m-4 card p-0"
                         style="border-radius: 10px;">
-                        <div class="mt-3 text-center">
+                        <div class="mt-3 text-start">
                           <img src="./assets/images/Avatar.png" class="img-fluid" style="width: 100px;" alt="">
                         </div>
-                        <div class="card-body text-center" style="position: relative;">
-                          <h4 class="card-title display-6 fs-4 fw-semibold" style="color: black;">.Net</h4>
+                        <div class="card-body text-start" style="position: relative;">
+                          <h4 class="card-title display-6 fs-4 fw-semibold" style="color: black;">Microsoft .Net</h4>
                           <p class="card-text">Unlock new possibilities with our .NET software development services, tailored to meet your
                             unique business requirements. We excel in .NET development, offering our deep expertise to assist your business to
                             grow at scale. Our wide-ranging solutions, from requirement analysis to deployment, deliver scalable and secure
                             applications that optimize user experiences and maximize business growth potential. </p>
-                          <div class="mt-4" style="position: absolute; bottom: 20px; left: 50%; transform: translate(-50%);">
+                          <div class="mt-4" style="position: absolute; bottom: 30px; left: 16px;">
                             <a href="#" class="main_button">Know More</a>
                         </div>
                         </div>
@@ -359,21 +368,63 @@
           </div>
         </div>
       </section>
-      <section class="pb-5 pt-5">
-        <div class="container p-3" style=" background-color: aliceblue; border-radius: 10px;">
-          <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-lg-4 col-12 text-center">
-              <img src="./assets/images/image 9.png" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-8 col-12">
-              <p>With a team of seasoned experts and cutting-edge technology, we offer comprehensive services tailored to meet the unique needs of each client. Whether you're looking to streamline your database infrastructure, optimize performance, enhance security, or leverage advanced analytics, Ndataviso has the expertise to deliver results.</p>
-              <h5 class="fw-semibold" style="color: #4CAF4F;">Ratana Tata</h5>
-              <p class="fw-semibold">British Dragon Boat Racing Association</p>
+
+      <section style="background-color: aliceblue;">
+        <div class="container pt-5 pb-5">
+          <h1 class="fw-semibold pb-3 text-center" style="color: #4CAF4F;">See What our clients says</h1>
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 col-11 d-flex justify-content-center">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="card" style="width: 100%; background-color: transparent; color: black;">
+                      <div class="card-body p-5 text-center">
+                        
+                        <p class="card-text text-center fs-5">"With a team of seasoned experts and cutting-edge technology, we offer comprehensive services tailored to meet the unique needs of each client. Whether you're looking to streamline your database infrastructure, optimize performance, enhance security, or leverage advanced analytics, NDataViso has the expertise to deliver results."</p>
+                        <p class="fw-bold text-center m-0 p-0">Uday Kumar</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card" style="width: 100%; background-color:transparent; color: black;">
+                      <div class="card-body p-5 text-center">
+                        
+                        <p class="card-text text-center fs-5">"With a team of seasoned experts and cutting-edge technology, we offer comprehensive services tailored to meet the unique needs of each client. Whether you're looking to streamline your database infrastructure, optimize performance, enhance security, or leverage advanced analytics, NDataViso has the expertise to deliver results."</p>
+                        <p class="fw-bold text-center m-0 p-0">Uday Kumar</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card" style="width: 100%; background-color: transparent; color: black;">
+                      <div class="card-body text-center p-5">
+                        
+                        <p class="card-text text-center fs-5">"With a team of seasoned experts and cutting-edge technology, we offer comprehensive services tailored to meet the unique needs of each client. Whether you're looking to streamline your database infrastructure, optimize performance, enhance security, or leverage advanced analytics, NDataViso has the expertise to deliver results."</p>
+                        <p class="fw-bold text-center m-0 p-0">Uday Kumar</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+                  <span class="visually-hidden">Next</span>
+              </button>
+              
+              </div>
             </div>
           </div>
-
         </div>
+        
       </section>
+
       <section class="pb-5 pt-5" style="background-color: aliceblue;">
         <div class="container" style="background-color: white;">
           <div class="row d-flex align-items-center" style="background-color: #4CAF4F; color: white;">
@@ -437,7 +488,7 @@
 
       </section>
 
-      <section class="pt-3 pb-3" style="background-color: #1c4b83; color: white;">
+      <section class="pt-3 pb-3" style="background-color: #1f57c3; color: white;">
         <div class="container">
           <div class="row pt-5 pb-5">
             <div class="col-lg-5 col-12 pt-lg-0 pt-4">
