@@ -140,7 +140,12 @@ h6, .h6 {
 }
 
 
-
+.footer_hover{
+    color: white;
+}
+.footer_hover:hover{
+    color: #4CAF4F;
+}
 
 
 
