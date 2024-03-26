@@ -146,6 +146,12 @@ h6, .h6 {
 .footer_hover:hover{
     color: #4CAF4F;
 }
+/* Custom CSS to enable hover dropdown */
+/* Custom CSS to enable hover dropdown */
+.hover-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
 
 
 
