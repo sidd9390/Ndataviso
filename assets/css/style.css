@@ -153,17 +153,32 @@ h6, .h6 {
   }
 
   
-  .custom-accordion-button {
-    color: #ffffff; /* Change color to your desired color */
-    background-color: #007bff; /* Change background color to your desired color */
-    border-color: #007bff; /* Change border color to your desired color */
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
   }
-  .custom-accordion-content {
-    color: #ffffff; /* Change color to your desired color */
-    background-color: #007bff; /* Change background color to your desired color */
-    border-color: #007bff; /* Change border color to your desired color */
+  
+  .activa, .accordion:hover {
+    background-color: #1f57c3; 
+    color: white;
   }
-
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    overflow: hidden;
+  }
 
 
 
