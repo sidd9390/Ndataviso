@@ -151,8 +151,18 @@ h6, .h6 {
 .hover-dropdown:hover .dropdown-menu {
     display: block;
   }
-  
 
+  
+  .custom-accordion-button {
+    color: #ffffff; /* Change color to your desired color */
+    background-color: #007bff; /* Change background color to your desired color */
+    border-color: #007bff; /* Change border color to your desired color */
+  }
+  .custom-accordion-content {
+    color: #ffffff; /* Change color to your desired color */
+    background-color: #007bff; /* Change background color to your desired color */
+    border-color: #007bff; /* Change border color to your desired color */
+  }
 
 
 
