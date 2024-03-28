@@ -10,16 +10,34 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Doppio+One&family=Handlee&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
+    <style>
+      .fix_button{
+        color: #4CAF4F;
+        text-decoration: none;
+        padding: 5px 15px;
+        border-radius: 20px;
+        background-color: transparent;
+        border: 2px solid #4CAF4F;
+      }
+      .fix_button:hover{
+        color: white;
+        background-color: #4CAF4F;
+      }
+    </style>
   </head>
   <body>
-    <div style="position: fixed; bottom: 15px; right: 15px;">
-      <a href="#top" class="fs-1" style="color: #4CAF4F; text-decoration: none;"><i class="fa-solid fa-square-caret-up"></i></a>
-
+    <div style="position: fixed; bottom: 15px; right: 15px;" id="top_bt">
+      <a href="#top" class="fs-3 fix_button"><i class="fa-solid fa-angle-up"></i></a>
     </div>
     <section style="position: fixed; top: 0; z-index: 50; width: 100%; background-color: white;">
         <div class="container">
             <div class="d-flex justify-content-lg-between justify-content-center align-items-center">
-                <img src="./assets/images/logo_n.png" class="img-fluid " style="width: 130px; height: 50px;" alt="">
+                <div class="d-flex flex-column justify-content-center">
+                  <div class="text-center">
+                    <img src="./assets/images/logo_n.png" class="img-fluid" style="width: 130px; height: 30px;" alt="">
+                  </div>
+                  <p style="font-size: 13px;" class="m-1">Expertise in Web and Databases</p>
+                </div>
                 <div class="d-flex align-items-center p-2 d-lg-block d-none">
                     <div class="d-flex flex-row">
                         <div class="d-flex align-items-center me-3">
@@ -94,10 +112,10 @@
                           Services
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="./services.html">Data Engineering</a></li>
-                          <li><a class="dropdown-item" href="./services.html">Data, BI and Analytics</a></li>
-                          <li><a class="dropdown-item" href="./services.html">Web App Development</a></li>
-                          <li><a class="dropdown-item" href="./services.html">Migration from Old solutions to Latest solutions</a></li>
+                          <li><a class="dropdown-item" href="./services.html#Data_Engineering">Data Engineering</a></li>
+                          <li><a class="dropdown-item" href="./services.html#Business_Intelligence(BI)">Business Intelligence(BI)</a></li>
+                          <li><a class="dropdown-item" href="./services.html#Web_App_Services">Web App Services</a></li>
+                          <li><a class="dropdown-item" href="./services.html#Migration_from_Old_Solutions_to_Latest_Solutions">Migration from Old solutions to Latest solutions</a></li>
                         </ul>                      
                       </li>
                       
@@ -186,160 +204,123 @@
 
     </section>
 
-
     <section class="pt-5 pb-5">
-        <div class="container">
-          <div class="row justify-content-center d-flex flex-row" style="position: relative;">
-            <div class="col-6 d-flex d-lg-none d-block">
-            </div>
-            <div class="col-6 text-right d-flex justify-content-end d-lg-none d-block">
-              <a class="btn btn-primary mb-3 me-1" style="background-color: transparent; border: 0; font-size: 20px; color: gray;" href="#carouselExample"
-                role="button" data-slide="prev">
-                <i class="fas fa-angle-left"></i>
-              </a>
-              <a class="btn btn-primary mb-3" style="background-color: transparent; border: 0; font-size: 20px; color: gray;" href="#carouselExample"
-                role="button" data-slide="next">
-                <i class="fas fa-angle-right"></i>
-              </a>
-            </div>
-            <div class="col-1 d-lg-flex d-none justify-content-center align-items-center">
-              <a class="btn btn-primary mb-3 me-1" style="background-color: transparent; border: 0; font-size: 40px; color: gray;"
-                href="#carouselExample" role="button" data-slide="prev">
-                <i class="fas fa-angle-left"></i>
-              </a>
-            </div>
-            <div class="col-lg-10 col-12">
-              <div id="carouselExample" class="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="row d-flex justify-content-center m-0">
-                      <div class="col-lg-5 m-4 card p-0"
-                        style="border-radius: 10px;">
-                        <div class="mt-3 text-start">
-                          <img src="./assets/images/Avatar.png"  class="img-fluid" style="width: 100px;" alt="">
-                        </div>
-                        <div class="card-body text-start" style="height: 310px; position: relative;">
-                          <h4 class="card-title display-6 fs-4 fw-semibold" style="color: black;">Microsoft SQL Server</h4>
-                          <p class="card-text">Our expertise in Microsoft SQL Server ensures robust, scalable, and
-                            secure data management solutions for businesses of all sizes. Whether you require database design and
-                            implementation, performance tuning, data migration, or disaster recovery strategies, our professionals are here to
-                            meet your needs.
-                          </p>
-                          
-                          <div class="mt-4" style="position: absolute; bottom: 30px; left: 16px;">
-                            <a href="#" class="main_button">Know More</a>
-                        </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-5 m-4 card p-0"
-                        style="border-radius: 10px;">
-                        <div class="mt-3 text-start">
-                          <img src="./assets/images/Avatar.png" class="img-fluid" style="width: 100px;" alt="">
-                        </div>
-                        <div class="card-body text-start p-4" style="position: relative;">
-                          <h4 class="card-title display-6 fs-4 fw-semibold" style="color: black;">SQL Server Integration Services (SSIS)</h4>
-                          <p class="card-text">With SSIS, we enable seamless data integration across diverse sources, formats, and destinations.
-                            Our team designs and deploys SSIS packages to extract, transform, and load data efficiently, automating complex
-                            workflows and streamlining data movement processes to enhance productivity and accuracy. </p>
-                          <div class="mt-4" style="position: absolute; bottom: 30px; left: 16px;">
-                            <a href="#" class="main_button">Know More</a>
-                        </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    
-                    <div class="row d-flex justify-content-center m-0">
-                      <div class="col-lg-5 m-4 card p-0"
-                        style="border-radius: 10px;">
-                        <div class="mt-3 text-start">
-                          <img src="./assets/images/Avatar.png"  class="img-fluid" style="width: 100px;" alt="">
-                        </div>
-                        <div class="card-body text-start" style="height: 310px; position: relative;">
-                          <h4 class="card-title display-6 fs-4 fw-semibold" style="color: black;">SQL Server Reporting Services (SSRS) </h4>
-                          <p class="card-text">Transform raw data into actionable insights with SSRS. Our experts design and deploy
-                            pixel-perfect reports, interactive dashboards, and mobile-ready solutions tailored to your business requirements.
-                            From financial statements to operational metrics, we empower stakeholders at all levels to make data-driven
-                            decisions with confidence.
-                          </p>
-                          <div class="mt-4" style="position: absolute; bottom: 30px; left: 16px;">
-                            <a href="#" class="main_button">Know More</a>
-                        </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-5 m-4 card p-0"
-                        style="border-radius: 10px;">
-                        <div class="mt-3 text-start">
-                          <img src="./assets/images/Avatar.png" class="img-fluid" style="width: 100px;" alt="">
-                        </div>
-                        <div class="card-body text-start p-4" style="position: relative;">
-                          <h4 class="card-title display-6 fs-4 fw-semibold" style="color: black;">SQL Server Analysis Services (SSAS)</h4>
-                          <p class="card-text">Unlock the power of multidimensional and tabular data analysis with SSAS. Our team develops OLAP
-                            cubes, data mining models, and advanced analytics solutions to uncover hidden patterns, trends, and correlations
-                            within your data. Gain deeper insights into your business performance and forecast future outcomes with precision.
-                          </p>
-                          <div class="mt-4" style="position: absolute; bottom: 30px; left: 16px;">
-                            <a href="#" class="main_button">Know More</a>
-                        </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item ">
-                    
-                    <div class="row d-flex justify-content-center m-0">
-                      <div class="col-lg-5 m-4 card p-0"
-                        style="border-radius: 10px;">
-                        <div class="mt-3 text-start">
-                          <img src="./assets/images/Avatar.png"  class="img-fluid" style="width: 100px;" alt="">
-                        </div>
-                        <div class="card-body text-start" style="height: 310px; position: relative;">
-                          <h4 class="card-title display-6 fs-4 fw-semibold" style="color: black;">Microsoft Power BI </h4>
-                          <p class="card-text">Experience the next generation of business intelligence with Power BI. Our specialists leverage
-                            this intuitive and user-friendly platform to create immersive data visualizations, interactive reports, and
-                            personalized dashboards that empower users to explore data, discover insights, and drive business outcomes in
-                            real-time.
-                          </p>
-                          <div class="mt-4" style="position: absolute; bottom: 30px; left: 16px;">
-                            <a href="#" class="main_button">Know More</a>
-                        </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-5 m-4 card p-0"
-                        style="border-radius: 10px;">
-                        <div class="mt-3 text-start">
-                          <img src="./assets/images/Avatar.png" class="img-fluid" style="width: 100px;" alt="">
-                        </div>
-                        <div class="card-body text-start" style="position: relative;">
-                          <h4 class="card-title display-6 fs-4 fw-semibold" style="color: black;">Microsoft .Net</h4>
-                          <p class="card-text">Unlock new possibilities with our .NET software development services, tailored to meet your
-                            unique business requirements. We excel in .NET development, offering our deep expertise to assist your business to
-                            grow at scale. Our wide-ranging solutions, from requirement analysis to deployment, deliver scalable and secure
-                            applications that optimize user experiences and maximize business growth potential. </p>
-                          <div class="mt-4" style="position: absolute; bottom: 30px; left: 16px;">
-                            <a href="#" class="main_button">Know More</a>
-                        </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                        
-                     
-                         
-                          
-                </div>
+      <div class="container text-center">
+        <div class="row d-flex justify-content-center row-cols-1 row-cols-lg-4 row-cols-md-3 g-2 g-lg-3">
+    
+          <div class="card col m-3">
+            <div class="card-body text-start" style="position: relative;">
+              <div class="mt-2 mb-2 text-start">
+                <img src="./assets/images/Avatar.png" class="img-fluid" style="width: 100px;" alt="">
+              </div>
+              <h4 class="card-title display-6 fs-4 fw-semibold" style="color: black;">Microsoft SQL Server</h4>
+              <p class="card-text pb-5">Our expertise in Microsoft SQL Server ensures robust, scalable, and
+                secure data management solutions for businesses of all sizes. Whether you require database design and
+                implementation, performance tuning, data migration, or disaster recovery strategies, our professionals are
+                here to
+                meet your needs.
+              </p>
+    
+              <div class="mt-4" style="position: absolute; bottom: 30px; left: 16px;">
+                <a href="#" class="main_button">Know More</a>
               </div>
             </div>
-            <div class="col-1 d-lg-flex d-none justify-content-center align-items-center">
-              <a class="btn btn-primary mb-3" style="background-color: transparent; border: 0; font-size: 40px; color: gray;" href="#carouselExample"
-                role="button" data-slide="next">
-                <i class="fas fa-angle-right"></i>
-              </a>
+          </div>
+          <div class="card col m-3">
+            <div class="card-body text-start" style="position: relative;">
+              <div class="mt-2 mb-2 text-start">
+                <img src="./assets/images/Avatar.png" class="img-fluid" style="width: 100px;" alt="">
+              </div>
+              <h4 class="card-title display-6 fs-4 fw-semibold" style="color: black;">SQL Server Integration Services (SSIS)</h4>
+              <p class="card-text pb-5">With SSIS, we enable seamless data integration across diverse sources, formats, and destinations.
+                Our team designs and deploys SSIS packages to extract, transform, and load data efficiently, automating complex
+                workflows and streamlining data movement processes to enhance productivity and accuracy.
+              </p>
+    
+              <div class="mt-4" style="position: absolute; bottom: 30px; left: 16px;">
+                <a href="#" class="main_button">Know More</a>
+              </div>
             </div>
           </div>
+          <div class="card col m-3">
+            <div class="card-body text-start" style="position: relative;">
+              <div class="mt-2 mb-2 text-start">
+                <img src="./assets/images/Avatar.png" class="img-fluid" style="width: 100px;" alt="">
+              </div>
+              <h4 class="card-title display-6 fs-4 fw-semibold" style="color: black;">SQL Server Reporting Services (SSRS)</h4>
+              <p class="card-text pb-5">Transform raw data into actionable insights with SSRS. Our experts design and deploy
+                pixel-perfect reports, interactive dashboards, and mobile-ready solutions tailored to your business requirements.
+                From financial statements to operational metrics, we empower stakeholders at all levels to make data-driven
+                decisions with confidence.
+              </p>
+    
+              <div class="mt-4" style="position: absolute; bottom: 30px; left: 16px;">
+                <a href="#" class="main_button">Know More</a>
+              </div>
+            </div>
+          </div>
+          <div class="card col m-3">
+            <div class="card-body text-start" style="position: relative;">
+              <div class="mt-2 mb-2 text-start">
+                <img src="./assets/images/Avatar.png" class="img-fluid" style="width: 100px;" alt="">
+              </div>
+              <h4 class="card-title display-6 fs-4 fw-semibold" style="color: black;">SQL Server Analysis Services (SSAS)</h4>
+              <p class="card-text pb-5">Unlock the power of multidimensional and tabular data analysis with SSAS. Our team develops OLAP
+                cubes, data mining models, and advanced analytics solutions to uncover hidden patterns, trends, and correlations
+                within your data. Gain deeper insights into your business performance and forecast future outcomes with precision.
+              </p>
+    
+              <div class="mt-4" style="position: absolute; bottom: 30px; left: 16px;">
+                <a href="#" class="main_button">Know More</a>
+              </div>
+            </div>
+          </div>
+          <div class="card col m-3">
+            <div class="card-body text-start" style="position: relative;">
+              <div class="mt-2 mb-2 text-start">
+                <img src="./assets/images/Avatar.png" class="img-fluid" style="width: 100px;" alt="">
+              </div>
+              <h4 class="card-title display-6 fs-4 fw-semibold" style="color: black;">Microsoft Power BI</h4>
+              <p class="card-text pb-5">Experience the next generation of business intelligence with Power BI. Our specialists leverage
+                this intuitive and user-friendly platform to create immersive data visualizations, interactive reports, and
+                personalized dashboards that empower users to explore data, discover insights, and drive business outcomes in
+                real-time.
+              </p>
+    
+              <div class="mt-4" style="position: absolute; bottom: 30px; left: 16px;">
+                <a href="#" class="main_button">Know More</a>
+              </div>
+            </div>
+          </div>
+          <div class="card col m-3">
+            <div class="card-body text-start" style="position: relative;">
+              <div class="mt-2 mb-2 text-start">
+                <img src="./assets/images/Avatar.png" class="img-fluid" style="width: 100px;" alt="">
+              </div>
+              <h4 class="card-title display-6 fs-4 fw-semibold" style="color: black;">Microsoft .Net</h4>
+              <p class="card-text pb-5">Unlock new possibilities with our .NET software development services, tailored to meet your
+                unique business requirements. We excel in .NET development, offering our deep expertise to assist your business to
+                grow at scale. Our wide-ranging solutions, from requirement analysis to deployment, deliver scalable and secure
+                applications that optimize user experiences and maximize business growth potential.
+              </p>
+    
+              <div class="mt-4" style="position: absolute; bottom: 30px; left: 16px;">
+                <a href="#" class="main_button">Know More</a>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          
+          
+    
+    
         </div>
-      </section>
+      </div>
+    </section>
+
+
 
       <section style="background-color: aliceblue;">
         <div class="container pt-5 pb-5">

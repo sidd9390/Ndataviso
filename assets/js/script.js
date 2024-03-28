@@ -12,3 +12,20 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+function toggleButtonVisibility() {
+  var button = document.getElementById('top_bt');
+  if (window.scrollY > 40) {
+    button.style.display = 'block';
+  } else {
+    button.style.display = 'none';
+  }
+}
+
+// Add event listener for scroll event
+window.addEventListener('scroll', function() {
+  toggleButtonVisibility();
+});
+
+// Call the function initially to set the initial state of the button
+toggleButtonVisibility();

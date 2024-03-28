@@ -10,16 +10,34 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Doppio+One&family=Handlee&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
+    <style>
+      .fix_button{
+        color: #4CAF4F;
+        text-decoration: none;
+        padding: 5px 15px;
+        border-radius: 20px;
+        background-color: transparent;
+        border: 2px solid #4CAF4F;
+      }
+      .fix_button:hover{
+        color: white;
+        background-color: #4CAF4F;
+      }
+    </style>
   </head>
   <body>
-    <div style="position: fixed; bottom: 15px; right: 15px;">
-      <a href="#top" class="fs-1" style="color: #4CAF4F; text-decoration: none;"><i class="fa-solid fa-square-caret-up"></i></a>
-
+    <div style="position: fixed; bottom: 15px; right: 15px;" id="top_bt">
+      <a href="#top" class="fs-3 fix_button"><i class="fa-solid fa-angle-up"></i></a>
     </div>
     <section style="position: fixed; top: 0; z-index: 50; width: 100%; background-color: white;">
       <div class="container">
           <div class="d-flex justify-content-lg-between justify-content-center align-items-center">
-              <img src="./assets/images/logo_n.png" class="img-fluid " style="width: 130px; height: 50px;" alt="">
+            <div class="d-flex flex-column justify-content-center">
+              <div class="text-center">
+                <img src="./assets/images/logo_n.png" class="img-fluid" style="width: 130px; height: 30px;" alt="">
+              </div>
+              <p style="font-size: 13px;" class="m-1">Expertise in Web and Databases</p>
+            </div>
               <div class="d-flex align-items-center p-2 d-lg-block d-none">
                   <div class="d-flex flex-row">
                       <div class="d-flex align-items-center me-3">
@@ -94,11 +112,11 @@
                         Services
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./services.html">Data Engineering</a></li>
-                        <li><a class="dropdown-item" href="./services.html">Data, BI and Analytics</a></li>
-                        <li><a class="dropdown-item" href="./services.html">Web App Development</a></li>
-                        <li><a class="dropdown-item" href="./services.html">Migration from Old solutions to Latest solutions</a></li>
-                      </ul>                      
+                        <li><a class="dropdown-item" href="./services.html#Data_Engineering">Data Engineering</a></li>
+                        <li><a class="dropdown-item" href="./services.html#Business_Intelligence(BI)">Business Intelligence(BI)</a></li>
+                        <li><a class="dropdown-item" href="./services.html#Web_App_Services">Web App Services</a></li>
+                        <li><a class="dropdown-item" href="./services.html#Migration_from_Old_Solutions_to_Latest_Solutions">Migration from Old solutions to Latest solutions</a></li>
+                      </ul>                       
                     </li>
                     <li class="nav-item me-3">
                       <a class="nav-link fw-semibold fs-5 footer_hover" href="./contact_us.html">Contact</a>
@@ -119,7 +137,7 @@
             
             <div class="row d-flex align-items-center">
                 <div class="col-lg-6 col-12 order-1 order-lg-0">
-                  <h1 class="fw-semibold txet-start" style="color: black;">About Us</h1>
+                  <h1 class="fw-semibold txet-start" style="color: #4CAF4F;">About Us</h1>
                     <p>At NDataViso, we understand that in today's data-driven world, managing and harnessing the power of information is
                       critical for success. As a leading provider in web and database management solutions, we specialize in helping
                       businesses unlock the full potential of their data assets.
@@ -150,7 +168,7 @@
                     <img src="./assets/images/image 11.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 col-12 text-center order-1 order-lg-0">
-                  <h1 class="fw-semibold text-lg-start text-start" style="color: black;">Our Team Values</h1>
+                  <h1 class="fw-semibold text-lg-start text-start" style="color: #4CAF4F;">Our Team Values</h1>
                   <p class="text-start">
                     At NDataViso, our team is a dynamic combination of implementation specialists, support experts as well as integration
                     and development professionals. Also, we endeavor to empower businesses, guaranteeing their development and success
@@ -171,7 +189,7 @@
           
           <div class="row d-flex align-items-center">
               <div class="col-lg-6 col-12 order-1 order-lg-0">
-                <h1 class="fw-semibold txet-start" style="color: black;">Vision and mission</h1>
+                <h1 class="fw-semibold txet-start" style="color: #4CAF4F;">Vision and mission</h1>
                   <p>Having a clear vision of the world your product and team are trying to create brings clarity to what projects you initiate, who you hire and what you focus on.
 
                   <br>  Where your vision is for a future, often utopian state, a mission is what you are doing now and will form part of the journey towards this vision.
