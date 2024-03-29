@@ -54,6 +54,19 @@
     .chevron-icon {
       animation: moveRight 2s infinite;
     }
+    .dropdown-menu {
+      border-radius: 0; /* Remove border-radius */
+    }
+    .dropdown-menu a.dropdown-item {
+      font-weight: 500;
+      color: black; /* Default text color */
+    }
+    .dropdown-menu a.dropdown-item:hover {
+      color: #4CAF4F; /* Text color on hover */
+    }
+    .dropdown-menu {
+      background-color: white !important; /* Set background color to white */
+    }
     </style>
   </head>
   <body>
@@ -131,8 +144,8 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                      <li class="nav-item me-3" style="background-color: #4CAF4F;">
-                        <a class="nav-link fw-semibold fs-5" style="color: white;" aria-current="page" href="./index.html">Home</a>
+                      <li class="nav-item me-3">
+                        <a class="nav-link fw-semibold fs-5 footer_hover"  aria-current="page" href="./index.html">Home</a>
                       </li>
                       <li class="nav-item me-3">
                         <a class="nav-link fw-semibold fs-5 footer_hover" href="./about_us.html">About</a>
@@ -148,7 +161,7 @@
                           <li><a class="dropdown-item" href="./services.html#Web_App_Services">Web App Services</a></li>
                           <li><a class="dropdown-item" href="./services.html#Migration_from_Old_Solutions_to_Latest_Solutions">Migration from Old solutions to Latest solutions</a></li>
                           <li><a class="dropdown-item" href="./services.html#cloud">Cloud Migration</a></li>
-                        </ul>                      
+                        </ul>
                       </li>
                       
                       <li class="nav-item me-3">
@@ -368,7 +381,7 @@
         <div class="container pt-5 pb-5">
           <h1 class="fw-semibold pb-3 text-center" style="color: #4CAF4F;">See What our clients says</h1>
           <div class="row d-flex justify-content-center">
-            <div class="col-lg-6 col-11 d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center">
               <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -377,48 +390,66 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <div class="card" style="width: 100%; background-color: transparent; color: black;">
-                      <div class="card-body p-5 text-center">
-                        
-                        <p class="card-text text-center fs-5">"With a team of seasoned experts and cutting-edge technology, we offer comprehensive services tailored to meet the unique needs of each client. Whether you're looking to streamline your database infrastructure, optimize performance, enhance security, or leverage advanced analytics, NDataViso has the expertise to deliver results."</p>
-                        <p class="fw-bold text-center m-0 p-0">Uday Kumar</p>
-                        <p>CO-OP TAXI-LINE</p>
+                    <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-12 justify-content-lg-end justify-content-center d-flex align-items-center">
+                        <img src="https://via.placeholder.com/150" class="img-fluid" alt="Testimonial Image">
+                      </div>
+                      <div class="col-lg-8 col-md-8 col-sm-8 col-12 pe-lg-5 p-0">
+                        <div class="card pe-lg-5 pe-0" style="background-color: transparent; color: black; border: none;">
+                          <div class="card-body p-5 text-lg-start text-center">
+                            <p class="card-text fs-6">"With a team of seasoned experts and cutting-edge technology, we offer comprehensive services tailored to meet the unique needs of each client. Whether you're looking to streamline your database infrastructure, optimize performance, enhance security, or leverage advanced analytics, NDataViso has the expertise to deliver results."</p>
+                            <p class="fw-bold m-0 p-0">Uday Kumar</p>
+                            <p>CO-OP TAXI-LINE</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="card" style="width: 100%; background-color:transparent; color: black;">
-                      <div class="card-body p-5 text-center">
-                        
-                        <p class="card-text text-center fs-5">"With a team of seasoned experts and cutting-edge technology, we offer comprehensive services tailored to meet the unique needs of each client. Whether you're looking to streamline your database infrastructure, optimize performance, enhance security, or leverage advanced analytics, NDataViso has the expertise to deliver results."</p>
-                        <p class="fw-bold text-center m-0 p-0">Uday Kumar</p>
-                        <p>CO-OP TAXI-LINE</p>
+                    <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-12 justify-content-lg-end justify-content-center d-flex align-items-center">
+                        <img src="https://via.placeholder.com/150" class="img-fluid" alt="Testimonial Image">
+                      </div>
+                      <div class="col-lg-8 col-md-8 col-sm-8 col-12 pe-lg-5 p-0">
+                        <div class="card pe-lg-5 pe-0" style="background-color: transparent; color: black; border: none;">
+                          <div class="card-body p-5 text-lg-start text-center">
+                            <p class="card-text fs-6">"With a team of seasoned experts and cutting-edge technology, we offer comprehensive services tailored to meet the unique needs of each client. Whether you're looking to streamline your database infrastructure, optimize performance, enhance security, or leverage advanced analytics, NDataViso has the expertise to deliver results."</p>
+                            <p class="fw-bold m-0 p-0">Uday Kumar</p>
+                            <p>CO-OP TAXI-LINE</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="card" style="width: 100%; background-color: transparent; color: black;">
-                      <div class="card-body text-center p-5">
-                        
-                        <p class="card-text text-center fs-5">"With a team of seasoned experts and cutting-edge technology, we offer comprehensive services tailored to meet the unique needs of each client. Whether you're looking to streamline your database infrastructure, optimize performance, enhance security, or leverage advanced analytics, NDataViso has the expertise to deliver results."</p>
-                        <p class="fw-bold text-center m-0 p-0">Uday Kumar</p>
-                        <p>CO-OP TAXI-LINE</p>
+                    <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-12 justify-content-lg-end justify-content-center d-flex align-items-center">
+                        <img src="https://via.placeholder.com/150" class="img-fluid" alt="Testimonial Image">
+                      </div>
+                      <div class="col-lg-8 col-md-8 col-sm-8 col-12 pe-lg-5 p-0">
+                        <div class="card pe-lg-5 pe-0" style="background-color: transparent; color: black; border: none;">
+                          <div class="card-body p-5 text-lg-start text-center">
+                            <p class="card-text fs-6">"With a team of seasoned experts and cutting-edge technology, we offer comprehensive services tailored to meet the unique needs of each client. Whether you're looking to streamline your database infrastructure, optimize performance, enhance security, or leverage advanced analytics, NDataViso has the expertise to deliver results."</p>
+                            <p class="fw-bold m-0 p-0">Uday Kumar</p>
+                            <p>CO-OP TAXI-LINE</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+                <button class="carousel-control-prev d-flex justify-content-start" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left" style="padding: 10px; background-color: #4CAF4F; border-radius: 50%;"></i></span>
                   <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+                </button>
+                <button class="carousel-control-next d-flex justify-content-end" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right" style="padding: 10px; background-color: #4CAF4F; border-radius: 50%;"></i></span>
                   <span class="visually-hidden">Next</span>
-              </button>
-              
+                </button>
               </div>
             </div>
           </div>
+          
         </div>
         
       </section>

@@ -184,6 +184,20 @@ h6, .h6 {
     border: 1px solid #1f57c3;
   }
 
+  .dropdown-menu {
+    border-radius: 0; /* Remove border-radius */
+  }
+  .dropdown-menu a.dropdown-item {
+    font-weight: 500;
+    color: black; /* Default text color */
+  }
+  .dropdown-menu a.dropdown-item:hover {
+    color: #4CAF4F; /* Text color on hover */
+  }
+  .dropdown-menu {
+    background-color: white !important; /* Set background color to white */
+  }
+
 
 
 
